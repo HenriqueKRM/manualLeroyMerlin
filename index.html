@@ -1,408 +1,377 @@
-!DOCTYPE html
-html lang=pt-BR
-head
-  meta charset=UTF-8 
-  meta name=viewport content=width=device-width, initial-scale=1.0 
-  titleManual Leroy Merlin  Obramaxtitle
-  link rel=preconnect href=httpsfonts.googleapis.com
-  link rel=preconnect href=httpsfonts.gstatic.com crossorigin
-  link href=httpsfonts.googleapis.comcss2family=Interwght@300;400;500;600;700&display=swap rel=stylesheet
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual Leroy Merlin Obramax</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  style
-    root {
-      --primary #0d6efd;
-      --primary-hover #0b5ed7;
-      --brand-green #00875a;
-      --bg-body #f8f9fa;
-      --bg-card #ffffff;
-      --text-main #212529;
-      --text-muted #6c757d;
-      --border-color #e9ecef;
-      --code-bg #272822;
-      --code-text #f8f8f2;
-      --sidebar-width 280px;
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --primary-hover: #0b5ed7;
+      --brand-green: #00875a;
+      --bg-body: #f8f9fa;
+      --bg-card: #ffffff;
+      --text-main: #212529;
+      --text-muted: #6c757d;
+      --border-color: #e9ecef;
+      --code-bg: #272822;
+      --code-text: #f8f8f2;
+      --sidebar-width: 280px;
     }
 
-     {
-      box-sizing border-box;
-      margin 0;
-      padding 0;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      font-family 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
-      background-color var(--bg-body);
-      color var(--text-main);
-      line-height 1.6;
-      display flex;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      display: flex;
     }
 
-     Sidebar Navigation 
     aside {
-      width var(--sidebar-width);
-      height 100vh;
-      position fixed;
-      top 0;
-      left 0;
-      background #1e293b;
-      color #f8fafc;
-      padding 2rem 1.5rem;
-      overflow-y auto;
-      box-shadow 2px 0 10px rgba(0, 0, 0, 0.05);
+      width: var(--sidebar-width);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 2rem 1.5rem;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
     }
 
     aside h2 {
-      font-size 1.1rem;
-      text-transform uppercase;
-      letter-spacing 1px;
-      margin-bottom 1.5rem;
-      color #94a3b8;
-      font-weight 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+      color: #94a3b8;
+      font-weight: 700;
     }
 
     aside nav ul {
-      list-style none;
+      list-style: none;
     }
 
     aside nav li {
-      margin-bottom 0.8rem;
+      margin-bottom: 0.8rem;
     }
 
     aside nav a {
-      color #cbd5e1;
-      text-decoration none;
-      font-size 0.95rem;
-      font-weight 500;
-      transition all 0.2s ease;
-      display block;
-      padding 0.4rem 0.6rem;
-      border-radius 6px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      display: block;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
     }
 
-    aside nav ahover {
-      color #ffffff;
-      background rgba(255, 255, 255, 0.1);
+    aside nav a:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
     }
 
-     Main Content 
     main {
-      margin-left var(--sidebar-width);
-      flex 1;
-      padding 3rem 4rem;
-      max-width 1100px;
+      margin-left: var(--sidebar-width);
+      flex: 1;
+      padding: 3rem 4rem;
+      max-width: 1100px;
     }
 
     header {
-      margin-bottom 3rem;
-      padding-bottom 1.5rem;
-      border-bottom 2px solid var(--border-color);
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
     }
 
     header h1 {
-      font-size 2.25rem;
-      color #0f172a;
-      font-weight 700;
-      letter-spacing -0.5px;
+      font-size: 2.25rem;
+      color: #0f172a;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
 
     header p {
-      color var(--text-muted);
-      font-size 1.1rem;
-      margin-top 0.5rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
     }
 
-     Cards Sections 
     section {
-      background var(--bg-card);
-      border-radius 12px;
-      padding 2rem;
-      margin-bottom 2rem;
-      box-shadow 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-      border 1px solid var(--border-color);
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border-color);
     }
 
     section h2 {
-      font-size 1.5rem;
-      color #0f172a;
-      margin-bottom 1.25rem;
-      padding-bottom 0.5rem;
-      border-bottom 2px solid var(--border-color);
-      display flex;
-      align-items center;
-      gap 0.5rem;
+      font-size: 1.5rem;
+      color: #0f172a;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     section h3 {
-      font-size 1.2rem;
-      color #334155;
-      margin 1.5rem 0 1rem 0;
+      font-size: 1.2rem;
+      color: #334155;
+      margin: 1.5rem 0 1rem 0;
     }
 
     p {
-      margin-bottom 1rem;
-      color #334155;
+      margin-bottom: 1rem;
+      color: #334155;
     }
 
     a {
-      color var(--primary);
-      text-decoration none;
-      font-weight 500;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    ahover {
-      text-decoration underline;
+    a:hover {
+      text-decoration: underline;
     }
 
-     Lists 
     ul, ol {
-      margin-left 1.5rem;
-      margin-bottom 1.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     li {
-      margin-bottom 0.5rem;
-      color #334155;
+      margin-bottom: 0.5rem;
+      color: #334155;
     }
 
-     Column Badge List 
     .badge-list {
-      display flex;
-      flex-wrap wrap;
-      gap 0.5rem;
-      list-style none;
-      margin 1rem 0 1.5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+      margin: 1rem 0 1.5rem 0;
     }
 
     .badge-list li {
-      background #e0e7ff;
-      color #3730a3;
-      padding 0.4rem 0.8rem;
-      border-radius 20px;
-      font-size 0.875rem;
-      font-weight 600;
-      margin 0;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin: 0;
     }
 
-     Callouts & Notes 
     .alert-box {
-      background-color #fffbe3;
-      border-left 4px solid #f59e0b;
-      padding 1rem 1.25rem;
-      border-radius 0 8px 8px 0;
-      margin 1.5rem 0;
-      color #78350f;
-      font-size 0.95rem;
+      background-color: #fffbe3;
+      border-left: 4px solid #f59e0b;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+      color: #78350f;
+      font-size: 0.95rem;
     }
 
     .alert-box strong {
-      color #b45309;
+      color: #b45309;
     }
 
-     Email Template Box 
     .email-template {
-      background-color #f8fafc;
-      border 1px solid #cbd5e1;
-      border-radius 8px;
-      padding 1.5rem;
-      margin 1rem 0 1.5rem 0;
-      font-size 0.95rem;
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1rem 0 1.5rem 0;
+      font-size: 0.95rem;
     }
 
     .email-template .title {
-      font-weight 700;
-      color #1e293b;
-      margin-bottom 1rem;
-      padding-bottom 0.5rem;
-      border-bottom 1px dashed #cbd5e1;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #cbd5e1;
     }
 
     .email-template pre {
-      white-space pre-wrap;
-      font-family inherit;
-      color #334155;
+      white-space: pre-wrap;
+      font-family: inherit;
+      color: #334155;
     }
 
-     Responsive 
-    @media (max-width 900px) {
+    @media (max-width: 900px) {
       body {
-        flex-direction column;
+        flex-direction: column;
       }
 
       aside {
-        width 100%;
-        height auto;
-        position relative;
+        width: 100%;
+        height: auto;
+        position: relative;
       }
 
       main {
-        margin-left 0;
-        padding 1.5rem;
+        margin-left: 0;
+        padding: 1.5rem;
       }
     }
-  style
-head
-body
+  </style>
+</head>
+<body>
 
-  !-- Menu Lateral --
-  aside
-    h2Navegaçãoh2
-    nav
-      ul
-        lia href=#organizacaoI. Organização da Falangeali
-        lia href=#legalopsII. Planilha Legal Opsali
-        lia href=#roboIII. Funcionamento do Robôali
-        lia href=#envio-novos style=padding-left 1.5rem;• Envio de Casos Novosali
-        lia href=#envio-cobrancas style=padding-left 1.5rem;• Envio de Cobrançasali
-      ul
-    nav
-  aside
+  <aside>
+    <h2>Navegação</h2>
+    <nav>
+      <ul>
+        <li><a href="#organizacao">I. Organização da Falange</a></li>
+        <li><a href="#legalops">II. Planilha Legal Ops</a></li>
+        <li><a href="#robo">III. Funcionamento do Robô</a></li>
+        <li><a href="#envio-novos" style="padding-left: 1.5rem;">• Envio de Casos Novos</a></li>
+        <li><a href="#envio-cobrancas" style="padding-left: 1.5rem;">• Envio de Cobranças</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  !-- Conteúdo Principal --
-  main
-    header
-      h1MANUAL LEROY MERLIN  OBRAMAXh1
-      pGuia operacional de rotinas, controle de falange e automações de mediação.p
-    header
+  <main>
+    <header>
+      <h1>MANUAL LEROY MERLIN / OBRAMAX</h1>
+      <p>Guia operacional de rotinas, controle de falange e automações de mediação.</p>
+    </header>
 
-    !-- Seção I --
-    section id=organizacao
-      h2I. ORGANIZAÇÃO DA FALANGEh2
-      p
-        Para organizar o fluxo de trabalho diário, comece alinhando as demandas da falange. Para acessar a sua falange
-      p
-      ol
-        liFaça login no sistema strongLegal Boxstrong.li
-        liSelecione a empresa strongLeroy Merlin (Contencioso) - 6057759strong.li
-        liEscolha o perfil strongSuper Informação (SIT) - Corpo Técnicostrong[cite 1].li
-        liAcesse a opção strongFALANGEstrong no menu lateral, clique em strong“ATUALIZAR CAIXA”strong e baixe o relatório selecionando strong“EXPORTAR EXCEL”strong[cite 1].li
-      ol
+    <section id="organizacao">
+      <h2>I. ORGANIZAÇÃO DA FALANGE</h2>
+      <p>Para organizar o fluxo de trabalho diário, comece alinhando as demandas da falange. Para acessar a sua falange:</p>
+      <ol>
+        <li>Faça login no sistema <strong>Legal Box</strong>.</li>
+        <li>Selecione a empresa <strong>Leroy Merlin (Contencioso) - 6057759</strong>.</li>
+        <li>Escolha o perfil <strong>Super Informação (SIT) - Corpo Técnico</strong>.</li>
+        <li>Acesse a opção <strong>FALANGE</strong> no menu lateral, clique em <strong>“ATUALIZAR CAIXA”</strong> e baixe o relatório selecionando <strong>“EXPORTAR EXCEL”</strong>.</li>
+      </ol>
 
-      p
-        Em seguida, abra a planilha a href=httpsdocs.google.comspreadsheetsd1s3XWeIAAui7Uj8MNY9C-5vfIRPyutJu7DslUO9v3OvYeditgid=0#gid=0 target=_blankLEROY - MEDIAÇÃOa e siga as instruções abaixo[cite 1]
-      p
-      ul
-        liAcesse o menu codeArquivo &gt; Importarcode, clique na aba strong“Fazer Upload”strong e selecione o relatório exportado[cite 1].li
-        liEscolha a opção strong“Inserir Novas Páginas”strong, clique em strong“Importar Dados”strong e renomeie a aba gerada com a data de extração do relatório[cite 1].li
-      ul
+      <p>Em seguida, abra a planilha <a href="https://docs.google.com/spreadsheets/d/1s3XWeIAAui7Uj8MNY9C-5vfIRPyutJu7DslUO9v3OvY/edit?gid=0#gid=0" target="_blank">LEROY - MEDIAÇÃO</a> e siga as instruções abaixo:</p>
+      <ul>
+        <li>Acesse o menu <code>Arquivo &gt; Importar</code>, clique na aba <strong>“Fazer Upload”</strong> e selecione o relatório exportado.</li>
+        <li>Escolha a opção <strong>“Inserir Novas Páginas”</strong>, clique em <strong>“Importar Dados”</strong> e renomeie a aba gerada com a data de extração do relatório.</li>
+      </ul>
 
-      pOrganize a aba mantendo strongexclusivamentestrong as seguintes colunas[cite 1]p
-      ul class=badge-list
-        liCasoli
-        liTarefali
-        liAção da Tarefali
-        liParte Autorali
-        liData Prazoli
-        liData Prazo Fatalli
-        liCNJ  Processoli
-        liObsli
-      ul
+      <p>Organize a aba mantendo <strong>exclusivamente</strong> as seguintes colunas:</p>
+      <ul class="badge-list">
+        <li>Caso</li>
+        <li>Tarefa</li>
+        <li>Ação da Tarefa</li>
+        <li>Parte Autora</li>
+        <li>Data Prazo</li>
+        <li>Data Prazo Fatal</li>
+        <li>CNJ / Processo</li>
+        <li>Obs</li>
+      </ul>
 
-      pExamine atentamente o campo de observações para identificar as solicitações e execute os procedimentos indicados[cite 1].p
-    section
+      <p>Examine atentamente o campo de observações para identificar as solicitações e execute os procedimentos indicados.</p>
+    </section>
 
-    !-- Seção II --
-    section id=legalops
-      h2II. PLANILHA LEGAL OPS LEROYh2
-      p
-        Outra forma de recebimento de novos casos é por meio da planilha a href=httpsdocs.google.comspreadsheetsd1VJYGR6GPfCuNICtyhrIvr6B5xMB4Y9KIvCQSzBU1hLceditgid=933082581#gid=933082581 target=_blankLEGALOPS - LEROY MERLINa[cite 1]. Na aba de mediações, filtre a strongColuna Hstrong para identificar as linhas vazias[cite 1].
-      p
-      p
-        Após identificar os processos, verifique no sistema do respectivo tribunal se já houve prolação de sentença ou se o valor da causa é inferior ao limite indicado na strongColuna Gstrong[cite 1]
-      p
-      ul
-        listrongCom sentençastrong A celebração do acordo torna-se inviável[cite 1].li
-        listrongAbaixo da alçadastrong Adote sempre o valor da causa como limite máximo para proposta de acordo[cite 1].li
-      ul
-    section
+    <section id="legalops">
+      <h2>II. PLANILHA LEGAL OPS LEROY</h2>
+      <p>Outra forma de recebimento de novos casos é por meio da planilha <a href="https://docs.google.com/spreadsheets/d/1VJYGR6GPfCuNICtyhrIvr6B5xMB4Y9KIvCQSzBU1hLc/edit?gid=933082581#gid=933082581" target="_blank">LEGALOPS - LEROY MERLIN</a>. Na aba de mediações, filtre a <strong>Coluna H</strong> para identificar as linhas vazias.</p>
+      <p>Após identificar os processos, verifique no sistema do respectivo tribunal se já houve prolação de sentença ou se o valor da causa é inferior ao limite indicado na <strong>Coluna G</strong>:</p>
+      <ul>
+        <li><strong>Com sentença:</strong> A celebração do acordo torna-se inviável.</li>
+        <li><strong>Abaixo da alçada:</strong> Adote sempre o valor da causa como limite máximo para proposta de acordo.</li>
+      </ul>
+    </section>
 
-    !-- Seção III --
-    section id=robo
-      h2III. FUNCIONAMENTO DO ROBÔh2
+    <section id="robo">
+      <h2>III. FUNCIONAMENTO DO ROBÔ</h2>
 
-      article id=envio-novos
-        h31. ENVIO DE CASOS NOVOSh3
-        pPara o envio de novos casos, preencha os seguintes campos na aba strong“ACORDOS”strong[cite 1]p
-        ul class=badge-list
-          liCASOli
-          liTAREFAli
-          liPARTE AUTORAli
-          liCNJ  PROCESSOli
-          liCLIENTEli
-          liEMAILli
-          liOFERTA MÁXIMAli
-          liOFERTADOli
-        ul
+      <article id="envio-novos">
+        <h3>1. ENVIO DE CASOS NOVOS</h3>
+        <p>Para o envio de novos casos, preencha os seguintes campos na aba <strong>“ACORDOS”</strong>:</p>
+        <ul class="badge-list">
+          <li>CASO</li>
+          <li>TAREFA</li>
+          <li>PARTE AUTORA</li>
+          <li>CNJ / PROCESSO</li>
+          <li>CLIENTE</li>
+          <li>EMAIL</li>
+          <li>OFERTA MÁXIMA</li>
+          <li>OFERTADO</li>
+        </ul>
 
-        div class=alert-box
-          strong📌 LEMBRETEstrong O campo emOFERTADOem corresponde ao valor exibido na proposta enviada por e-mail[cite 1]. Por padrão, ele deve ser calculado subtraindo strongR$ 500,00strong do valor informado em “OFERTA MÁXIMA”[cite 1].
-        div
+        <div class="alert-box">
+          <strong>📌 LEMBRETE:</strong> O campo <em>OFERTADO</em> corresponde ao valor exibido na proposta enviada por e-mail. Por padrão, ele deve ser calculatedo subtraindo <strong>R$ 500,00</strong> do valor informado em “OFERTA MÁXIMA”.
+        </div>
 
-        p
-          Após o preenchimento dos campos, acione o robô acessando a barra de ferramentas em code🛠️ Enviar E-mailscode e, em seguida, clique em strong“Disparar E-mails”strong[cite 1].
-        p
-        p
-          Com o disparo dos e-mails, o status da strongColuna Pstrong será alterado para strong“SIM”strong, confirmando o envio da mensagem[cite 1].
-        p
+        <p>Após o preenchimento dos campos, acione o robô acessando a barra de ferramentas em <code>🛠️ Enviar E-mails</code> e, em seguida, clique em <strong>“Disparar E-mails”</strong>.</p>
+        <p>Com o disparo dos e-mails, o status da <strong>Coluna P</strong> será alterado para <strong>“SIM”</strong>, confirmando o envio da mensagem.</p>
 
-        !-- Template 1 --
-        div class=email-template
-          div class=title
-            strongTÍTULO DO E-MAILstrongbr
-            CLIENTE - PROPOSTA DE ACORDO - PROCESSO Nº CNJ - TESTE - CASO Nº CASO[cite 1]
-          div
-          pre
-Prezados, bom dia, tudo bem[cite 1]
+        <div class="email-template">
+          <div class="title">
+            <strong>TÍTULO DO E-MAIL:</strong><br>
+            CLIENTE - PROPOSTA DE ACORDO - PROCESSO Nº CNJ - TESTE - CASO Nº CASO
+          </div>
+          <pre>
+Prezados, bom dia, tudo bem?
 
-Com o intuito de privilegedar a composição amigável e oferecer uma solução prática, rápida e vantajosa para ambas as partes, indagamos se há interesse em formalizar acordo, possibilitando o encerramento da demanda de forma consensual, com pagamento direto em conta bancária[cite 1].
+Com o intuito de privilegedar a composição amigável e oferecer uma solução prática, rápida e vantajosa para ambas as partes, indagamos se há interesse em formalizar acordo, possibilitando o encerramento da demanda de forma consensual, com pagamento direto em conta bancária.
 
-Nesse sentido, apresentamos a seguinte proposta pagamento do valor de R$ (VALOR COLUNA L), correspondente à empresa (COL G), o pagamento até dia 20 de novembro, contados da data do protocolo do Termo de Acordo[cite 1].
+Nesse sentido, apresentamos a seguinte proposta: pagamento do valor de R$ (VALOR COLUNA L), correspondente à empresa (COL G), o pagamento até dia 20 de novembro, contados da data do protocolo do Termo de Acordo.
 
-Em caso de aceite, solicitamos a gentileza de responder a este e-mail (copiando a todos) informando a concordância e os dados bancários abaixo, para elaboração do Termo de Acordo e posterior protocolo[cite 1]
+Em caso de aceite, solicitamos a gentileza de responder a este e-mail (copiando a todos) informando a concordância e os dados bancários abaixo, para elaboração do Termo de Acordo e posterior protocolo:
 
-Banco
-Agência
-Conta Corrente
-Nome do Favorecido (advogado ou parte autora)
-CPF
-Telefone para contato
+Banco:
+Agência:
+Conta Corrente:
+Nome do Favorecido (advogado ou parte autora):
+CPF:
+Telefone para contato:
 
-Salientamos que a presente proposta possui prazo de validade de 02 (dois) dias úteis[cite 1]. Ressaltamos, ainda, que qualquer alteração no andamento processual poderá inviabilizar a composição[cite 1].
+Salientamos que a presente proposta possui prazo de validade de 02 (dois) dias úteis. Ressaltamos, ainda, que qualquer alteração no andamento processual poderá inviabilizar a composição.
 
-Colocamo-nos à disposição para eventuais esclarecimentos e aguardamos seu retorno[cite 1].
+Colocamo-nos à disposição para eventuais esclarecimentos e aguardamos seu retorno.
 
-Atenciosamente,[cite 1]
-          pre
-        div
-      article
+Atenciosamente,
+          </pre>
+        </div>
+      </article>
 
-      article id=envio-cobrancas style=margin-top 2rem;
-        h32. ENVIO DE COBRANÇASh3
-        p
-          Decorrido strongum diastrong do envio inicial sem retorno, deve-se realizar a cobrança do caso[cite 1]. Para isso, altere a indicação “SIM” na strongColuna Pstrong para strong“COBRAR”strong e repita o procedimento de disparo[cite 1].
-        p
-        p
-          Assim que a cobrança for realizada, o robô atualizará o status da coluna P de “COBRAR” para strong“SIM”strong, evitando o envio em duplicidade[cite 1].
-        p
+      <article id="envio-cobrancas" style="margin-top: 2rem;">
+        <h3>2. ENVIO DE COBRANÇAS</h3>
+        <p>Decorrido <strong>um dia</strong> do envio inicial sem retorno, deve-se realizar a cobrança do caso. Para isso, altere a indicação “SIM” na <strong>Coluna P</strong> para <strong>“COBRAR”</strong> e repita o procedimento de disparo.</p>
+        <p>Assim que a cobrança for realizada, o robô atualizará o status da coluna P de “COBRAR” para <strong>“SIM”</strong>, evitando o envio em duplicidade.</p>
 
-        !-- Template 2 --
-        div class=email-template
-          div class=title
-            strongTEXTO DO E-MAIL DE COBRANÇAstrong
-          div
-          pre
-Prezados, bom dia![cite 1]
+        <div class="email-template">
+          <div class="title">
+            <strong>TEXTO DO E-MAIL DE COBRANÇA:</strong>
+          </div>
+          <pre>
+Prezados, bom dia!
 
-Espero que estejam bem[cite 1].
+Espero que estejam bem.
 
-Gostaríamos de fazer um breve acompanhamento sobre a proposta de acordo que enviamos[cite 1]. Por favor, foi possível analisar[cite 1]
+Gostaríamos de fazer um breve acompanhamento sobre a proposta de acordo que enviamos. Por favor, foi possível analisar?
 
-Permanecemos à disposição para qualquer esclarecimento necessário[cite 1].
-          pre
-        div
-      article
+Permanecemos à disposição para qualquer esclarecimento necessário.
+          </pre>
+        </div>
+      </article>
 
-    section
-  main
+    </section>
+  </main>
 
-body
-html
+</body>
+</html>
